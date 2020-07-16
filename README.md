@@ -1,7 +1,7 @@
-#Best practices for writing Dockerfiles
+# Best practices for writing Dockerfiles
 
-##Introduction
-##General guidelines and recommendations
+## Introduction
+## General guidelines and recommendations
 - Create ephemeral containers (น้อย)
 - Understand build context
 - Pipe Dockerfile through stdin (เยอะ)
@@ -14,7 +14,7 @@
 
 - Sort multi-line arguments
 - Leverage build cache
-* Dockerfile instructions
+- Dockerfile instructions
 - FROM (น้อย)
 - LABEL
 
