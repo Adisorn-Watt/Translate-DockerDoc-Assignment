@@ -1,6 +1,9 @@
 # Best practices for writing Dockerfiles
 
 ## Introduction
+ฺBla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
+
 ## General guidelines and recommendations
 - Create ephemeral containers (น้อย)
 - Understand build context
