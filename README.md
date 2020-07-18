@@ -1,8 +1,8 @@
 # Best practices for writing Dockerfiles
 
 ## Introduction
-ฺBla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
+ฺเอกสารนี้ครอบคลุมแนวทางปฏิบัติและวิธีการที่ดีที่สุดที่แนะนำสำหรับการสร้าง image ที่มีประสิทธิภาพ...
+อ่านเพิ่มเติมที่ [Introduction.md](../blob/master/Introduction.md)
 
 ## General guidelines and recommendations
 - Create ephemeral containers 
