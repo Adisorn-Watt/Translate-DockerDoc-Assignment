@@ -1,7 +1,7 @@
 ## Introduction
 เอกสารนี้ครอบคลุมแนวทางปฏิบัติและวิธีการที่ดีที่สุดที่แนะนำสำหรับการสร้าง image ที่มีประสิทธิภาพ
 
-Docker จะการสร้าง image โดยอัตโนมัติ โดยการอ่านคำสั่ง (instruction) จากไฟล์ `Dockerfile`
+Docker จะทำการสร้าง image โดยอัตโนมัติ โดยการอ่านคำสั่ง (instruction) จากไฟล์ `Dockerfile`
 ซึ่งเป็นไฟล์แบบ text ที่ประกอบไปด้วยคำสั่งทั้งหมดแบบเรียงตามลำดับที่จำเป็นสำหรับการสร้าง image
 ไฟล์ `Dockerfile` มีรูปแบบการเขียนและชุดคำสั่งที่มีความเฉพาะตัว ซึ่งสามารถหาวิธีการเขียนที่ถูกต้องได้จาก
 [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
@@ -20,10 +20,10 @@ CMD python /app/app.py
 ```
 
 
-แต่ละคำสั่งจะสร้างเลเยอร์ขึ้นมา 1 ชั้น\
-* FROM สร้าง (create) เลเยอร์จาก image ubuntu:18.04\
-* COPY เพิ่มไฟล์จาก directory ปัจจุบันของ Client Docker\
-* RUN สร้าง (build) แอปพลิเคชันด้วย make\
+แต่ละคำสั่งจะสร้างเลเยอร์ขึ้นมา 1 ชั้น
+* FROM สร้าง (create) เลเยอร์จาก image ubuntu:18.04
+* COPY เพิ่มไฟล์จาก directory ปัจจุบันของ Client Docker
+* RUN สร้าง (build) แอปพลิเคชันด้วย make
 * CMD เจาะจงว่าคำสั่งใดที่จะถูกรันใน Container
 
 
