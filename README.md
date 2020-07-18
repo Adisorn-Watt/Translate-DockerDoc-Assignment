@@ -2,7 +2,7 @@
 
 ## Introduction
 ฺเอกสารนี้ครอบคลุมแนวทางปฏิบัติและวิธีการที่ดีที่สุดที่แนะนำสำหรับการสร้าง image ที่มีประสิทธิภาพ...\
-อ่านเพิ่มเติมที่ [Introduction.md](../blob/Introduction.md)
+อ่านต่อที่ [Introduction.md](../blob/Introduction.md)
 
 ## General guidelines and recommendations
 - Create ephemeral containers 
