@@ -1,4 +1,4 @@
-## Use multi-stage builds
+## Use multi-stage builds - การใช้ multi-stage builds
 
 **[Multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/)** สามารถช่วยลดขนาดของ image สุดท้ายได้อย่างมาก โดยการกระทำนี้จะไม่พยายามลดจำนวนของเลเยอร์และไฟล์กลาง เนื่องจากimage ที่ถูกสร้างใน stage สุดท้ายของการสร้างนั้นคุณสามารถลดขนาดเยอร์ต่างๆของ image ให้ได้มากที่สุดโดยการใช้ **[leveraging build cache](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#leverage-build-cache)** กล่าวคือคุณไม่จำเป็นที่จะต้องทำการสร้าง iamge ใหม่ทุกครั้งแต่การใช้ Multi-stage builds จะเป็นการคัดลอก image ที่เคยถูกสร้างไว้แล้วมาใช้กับ stage ใหม่แทน
 
