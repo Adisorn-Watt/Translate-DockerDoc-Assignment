@@ -32,8 +32,6 @@ LABEL com.example.version.is-production=""
 LABEL
 ```
 
-เพื่อป้องกันการสร้าง layer เพิ่มเติม ซึ่งสิ่งเหล่านี้ไม่มีความจำเป็นอีกต่อไป แต่ยังคงสามารถรองรับการ combining labels ได้อยู่
-
 ```
 # กำหนด Label หลายอันในบรรทัดเดียว
 LABEL com.example.version="0.0.1-beta" com.example.release-date="2015-02-12"
