@@ -1,0 +1,3 @@
+## Pipe Dockerfile through `stdin`
+
+Docker มีความสามารถในการที่จะ build image โดยการ pipe `Dockerfile` ผ่านทางคำสั่ง `stdin` ด้วย(with) build context แบบ local หรือ remote การ pipe `Dockerfile` ผ่านทางคำสั่ง `stdin` สามารถเป็นประโยชน์ในการทำ build เพื่อใช้งานเพียงครั้งเดียว (one-off builds) โดยไม่ต้องเขียน Dockerfile ลงใน disk หรือในสถานการณ์ที่ `Dockerfile` ถูกสร้างขึ้น และไม่ควรที่จะคงอยู่ต่อไปหลังจากนั้น
