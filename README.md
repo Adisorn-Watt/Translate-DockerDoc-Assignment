@@ -29,3 +29,5 @@
 - USER
 - WORKDIR 
 - ONBUILD
+
+*Translate from: https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#exclude-with-dockerignore*
