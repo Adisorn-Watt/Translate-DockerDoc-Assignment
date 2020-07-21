@@ -1,4 +1,4 @@
-#Dockerfile instructions
+# Dockerfile instructions
 
 คำแนะนำต่อไปนี้ออกแบบมาเพื่อช่วยให้เราสร้าง Dockerfile ที่มีประสิทธิภาพ สามารถพัฒนา และบำรุงรักษาได้
 
@@ -6,7 +6,7 @@
 Dockerfile
 ```
 
-#FROM
+# FROM
 
 ข้อมูลเพิ่มเติม : <https://docs.docker.com/engine/reference/builder/#from>
 
