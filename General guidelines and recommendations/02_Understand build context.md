@@ -1,10 +1,10 @@
 # Understand build context
-เมื่อคุณใช้คำสั่ง `docker build` ไดเร็กทอรีที่กำลังทำงานอยู่ปัจจุบันก็คือ *build context* โดยทั่วไปแล้วจะถือว่า Dockerfile อยู่ตรงนี้เป็นค่าเริ่มต้น แต่คุณสามารถระบุเจาะจงได้ว่าอยู่ที่ไดเร็กทอรีอื่นๆ ได้ด้วยการแฟล็กไฟล์ (file flag หรือ `-f`) ไม่ว่าตำแหน่งของ `Dockerfile` นั้นจะอยู่ที่ใด ไฟล์และไดเร็กทอรีที่มีอยู่ในไดเร็กทอรีปัจจุบัน จะถูกส่งไปยัง Docker daemon เพื่อเป็น build context
+เมื่อคุณใช้คำสั่ง `docker build` directory ที่กำลังทำงานอยู่ปัจจุบันก็คือ *build context* โดยทั่วไปแล้วจะถือว่า Dockerfile อยู่ตรงนี้เป็นค่าเริ่มต้น แต่คุณสามารถระบุเจาะจงได้ว่าอยู่ที่ directory อื่นๆ ได้ด้วยการแฟล็กไฟล์ (file flag หรือ `-f`) ไม่ว่าตำแหน่งของ `Dockerfile` นั้นจะอยู่ที่ใด ไฟล์และ directory ที่มีอยู่ใน directory ปัจจุบัน จะถูกส่งไปยัง Docker daemon เพื่อเป็น build context
 
 ------
 ------
 ##### ตัวอย่าง Build context 
-สร้างไดเร็กทอรีสำหรับ build context และ `cd` (เปลี่ยนไดเร็กทอรี) เข้าไปในไดเร็กทอรีนั้นๆ จากนั้นพิมพ์คำว่า "hello" เข้าไปในไฟล์ประเภท text ชื่อไฟล์ว่า `hello` และสร้างไฟล์ Dockerfile ที่รันคำสั่ง `cat` อยู่ภายในไฟล์ แล้ว build image จาก build context นี้ (`.`):
+สร้าง directory สำหรับ build context และ `cd` (เปลี่ยน directory) เข้าไปใน directory นั้นๆ จากนั้นพิมพ์คำว่า "hello" เข้าไปในไฟล์ประเภท text ชื่อไฟล์ว่า `hello` และสร้าง Dockerfile ที่รันคำสั่ง `cat` อยู่ภายในไฟล์ แล้ว build image จาก build context นี้ (`.`):
 
 ```
 mkdir myproject && cd myproject
@@ -12,7 +12,7 @@ echo "hello" > hello
 echo -e "FROM busybox\nCOPY /hello /\nRUN cat /hello" > Dockerfile
 docker build -t helloapp:v1 . 
 ```
-ย้าย `Dockerfile` และไฟล์ `hello` ไปยังไดเร็กทอรีที่อยู่แยกออกไป และทำการสร้าง image เวอร์ชั่นใหม่ (โดยปราศจากการพึ่งพาแคชจากการ build รอบล่าสุด) ใช้ `-f` ในการชี้ไปยัง Dockerfile และระบุเจาะจงไดเร็กทอรีของ build context 
+ย้าย `Dockerfile` และไฟล์ `hello` ไปยัง directory ที่อยู่แยกออกไป และทำการสร้าง image เวอร์ชั่นใหม่ (โดยปราศจากการพึ่งพาแคชจากการ build รอบล่าสุด) ใช้ `-f` ในการชี้ไปยัง Dockerfile และระบุเจาะจง directory ของ build context 
 
 ```
 mkdir -p dockerfiles context
