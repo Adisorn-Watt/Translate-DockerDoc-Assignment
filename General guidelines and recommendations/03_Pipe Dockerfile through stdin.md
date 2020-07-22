@@ -43,7 +43,7 @@ EOF
 
 การมองข้าม build context มีประโยชน์ในสถานการณ์ที่ `Dockerfile` ของคุณ ไม่ต้องการที่จะคัดลอกไฟล์ลงไปใน image, และช่วยเพิ่มความเร็วในการ build เนื่องจากไม่มีไฟล์ใดเลยถูกส่งไปยัง daemon
 
-ถ้าหากคุณต้องการที่จะเพิ่มความเร็วในการ build ให้มากขึ้น โดยการละเว้นไม่ส่ง`บาง`ไฟล์จาก build context ให้ทำการอ่าน [exclude with .dockerignore](#exclude-with-dockerignore)
+ถ้าหากคุณต้องการที่จะเพิ่มความเร็วในการ build ให้มากขึ้น โดยการละเว้นไม่ส่ง`บาง`ไฟล์จาก build context ให้ทำการอ่าน [exclude with .dockerignore](https://github.com/Adisorn-Watt/Translate-DockerDoc-Assignment/blob/master/General%20guidelines%20and%20recommendations/04_Exclude%20with%20.dockerignore.md)
 
 ------
 ------
