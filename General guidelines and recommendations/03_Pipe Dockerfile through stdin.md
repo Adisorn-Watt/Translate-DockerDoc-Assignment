@@ -23,5 +23,9 @@ EOF
 ------
 ------
 
-### BUILD AN IMAGE USING A DOCKERFILE FROM STDIN, WITHOUT SENDING BUILD CONTEXT
+### Build image โดยการใช้ Dockerfile ผ่าน stdin โดยไม่ทำการส่ง build context
+
+ใช้คำสั่งนี้ในการ build image โดยการใช้ Dockerfile ผ่าน stdin โดยไม่ทำการส่งไฟล์ใดๆ เพิ่มเติมเพื่อใช้เป็น build context เครื่องหมายยัติภังค์ (Hyphen หรือ `-`) รับตำแหน่งของ PATH และสั่งให้ Docker อ่าน build context (ซึ่งประกอบด้วย Dockerfile เท่านั้น) จาก stdin แทนที่จะอ่านจาก directory
+
+
 
