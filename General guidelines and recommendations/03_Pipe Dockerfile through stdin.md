@@ -120,5 +120,3 @@ EOF
 ##### Under the hood
 
 เวลาที่ทำการ build image โดยใช้ remote Git repository เป็น build context. Docker จะทำการ `git clone` repository นั้นๆ ลงบนเครื่อง local และส่งไฟล์เหล่านั้นไปเป็น build context ให้กับ daemon. จึงทำให้ต้องลง `git` บนเครื่อง local ที่ทำการรัน `docker build`
-------
-------
