@@ -78,7 +78,7 @@ COPY failed: stat /var/lib/docker/tmp/docker-builder249218248/somefile.txt: no s
 docker build [OPTIONS] -f- PATH
 ```
 
-ตัวอย่างข้างล่างใช้ directory ปัจจุบัน (`.`) เป็น building context และ build image โดยการใช้ `Dockerfile` ที่ส่งผ่านทาง `stdin` โดยการใช้ [เอกสารนี้](http://tldp.org/LDP/abs/html/here-docs.html).
+ตัวอย่างข้างล่างใช้ directory ปัจจุบัน (`.`) เป็น building context และ build image โดยการใช้ `Dockerfile` ที่ส่งผ่านทาง `stdin` โดยการใช้ [Here Documents](http://tldp.org/LDP/abs/html/here-docs.html).
 
 ```
 # create a directory to work in
